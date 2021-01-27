@@ -7,10 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-        <nav class="navbar navbar-light bg-light ">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <h1 class="navbar-brand">Weather Dashboard</h1>
                 <form class="d-flex">
@@ -26,7 +27,9 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="city"></h2><img id="weatherIcon"/>
+                                <h2>Current Forecast:</h2>
+                                <h3 class="city"></h3><img id="weatherIcon"/>
+                                <p class ="date"></p>
                                 <p class="temp"></p>
                                 <p class="humidity"></p>
                                 <p class="windspeed"></p>
@@ -39,6 +42,39 @@
                         <div class="card">
                             <div class="card-body">
                                 <h2>5-Day Forecast:</h2>
+                                <div class="row">
+                                    <div class="card col-2" id="day1">
+                                        <h3>Day 1</h3><img id="weathericon1"/>
+                                        <p id="day1date"></p>
+                                        <p id="day1temp"></p>
+                                        <p id="day1humidity"></p>
+                                    </div>
+                                    <div class="card col-2" id="day2">
+                                        <h3>Day 2</h3><img id="weathericon2"/>
+                                        <p id="day2date"></p>
+                                        <p id="day2temp"></p>
+                                        <p id="day2humidity"></p>
+                                    </div>
+                                    <div class="card col-2" id="day3">
+                                        <h3>Day 3</h3><img id="weathericon3"/>
+                                        <p id="day3date"></p>
+                                        <p id="day3temp"></p>
+                                        <p id="day3humidity"></p>
+                                    </div>
+                                    <div class="card col-2" id="day4">
+                                        <h3>Day 4</h3><img id="weathericon4"/>
+                                        <p id="day4date"></p>
+                                        <p id="day4temp"></p>
+                                        <p id="day4humidity"></p>
+                                    </div>
+                                    <div class="card col-2" id="day5">
+                                        <h3>Day 5</h3><img id="weathericon5"/>
+                                        <p id="day5date"></p>
+                                        <p id="day5temp"></p>
+                                        <p id="day5humidity"></p>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>

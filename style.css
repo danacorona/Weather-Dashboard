@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.low {
+    background-color: green;
+    display: inline;
+    color: white;
+}
+
+.moderate {
+    background-color: orange;
+    display: inline;
+    color: white;
+}
+
+.severe{
+    background-color: red;
+    display: inline;
+    color: white;
+}
+
+#weathericon1, #weathericon2, #weathericon3, #weathericon4, #weathericon5 {
+    width: 60px;
+}
